@@ -166,9 +166,22 @@ transition: slide-left
 transition: slide-left
 ---
 
-# Ad 
-
-- create /views/components/truck.ejs, header.ejs, footer.ejs, trucks.ejs
+# Add EJS partials and Bootstrap
+Check out 
+- in app.js:
+  ```js
+  app.use(
+    "/css",
+    express.static(path.join(__dirname, "node_modules/bootswatch/dist/sketchy"))
+  );
+  app.use(
+    "/js",
+    express.static(path.join(__dirname, "node_modules/bootstrap/dist/js"))
+  );
+  ```
+- Let's use a free Bootstrap theme from [Bootswatch](https://bootswatch.com/) 
+- Implement partials (ex: header.ejs and footer.ejs)
+- Use a Bootstrap card component to display the truck data and implement it as a component
 
 ---
 transition: slide-left
