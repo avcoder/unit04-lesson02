@@ -16,11 +16,11 @@ transition: slide-left
 mdc: true
 ---
 
-# Full-Stack Development
-Full-Stack Development - part 1/8
-- [ ] Refactor App
-- [ ] EJS
-- [ ] Agile & Scrum
+# EJS
+Full-Stack Development - part 2/8
+- [ ] Continue Full-Stack Setup (MVC)
+- [ ] EJS Syntax and Templating
+- [ ] Incorporate Bootstrap
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
