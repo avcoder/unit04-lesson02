@@ -39,6 +39,7 @@ transition: slide-left
 
 - MVC: Recap our folder structure
 - EJS website: https://ejs.co/
+- Foodtruck template Repo: https://github.com/avcoder/foodtruck-template
 
 
 ---
