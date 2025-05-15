@@ -171,6 +171,22 @@ transition: slide-left
 transition: slide-left
 ---
 
+# Make addTruck form using Bootstrap
+
+- Using [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/overview/) create a form to add a foodtruck
+
+---
+transition: slide-left
+---
+
+# Exercise: make editTruck form using Bootstrap
+
+- Using [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/overview/) create a form to edit a foodtruck
+
+---
+transition: slide-left
+---
+
 # Set up connect-flash
 
 - connect-flash is used to show success messages, error messages, info etc.
@@ -193,21 +209,6 @@ transition: slide-left
 - create `flashValidationErrors()` in errorHandlers.js
 - in truckController.js, insert `req.flash("success", `/${truck.slug} added successfully!`)`
 
----
-transition: slide-left
----
-
-# Make addTruck form using Bootstrap
-
-- Using [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/overview/) create a form to add a foodtruck
-
----
-transition: slide-left
----
-
-# Exercise: make editTruck form using Bootstrap
-
-- Using [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/overview/) create a form to edit a foodtruck
 
 ---
 transition: slide-left
