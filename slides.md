@@ -112,19 +112,18 @@ transition: slide-left
 ---
 layout: image-right
 transition: slide-left
-image: /assets/100days.png
-backgroundSize: 400px 120px
+image: /assets/scott.png
+backgroundSize: 400px 170px
 class: text-left
 ---
 
 # 10 minute break
 
 🍦 Cool Tips, Trends and Resources:
-- 💯 [100 Days of Code](https://www.100daysofcode.com/)
-- 🤓 [Learn Anything](https://learn-anything.xyz/)
-- 🥪 [CSS has](https://x.com/wesbos/status/1737148340322652632)
-- 🦸‍♂️ [GSAP Now Free](https://gsap.com/pricing/)
-- 🌶️ [How did REST come to mean Opposite of REST](https://htmx.org/essays/how-did-rest-come-to-mean-the-opposite-of-rest/)
+- 🕑 [The Problem with Time & Timezones](https://www.youtube.com/watch?v=-5wpm-gesOY)
+- 😬 [Next.js App Router Migration](https://www.flightcontrol.dev/blog/nextjs-app-router-migration-the-good-bad-and-ugly)
+- 💾 [Surf the Web Like It's 1999](https://billsworld.neocities.org/)
+- 🌶️ [HTMX](https://htmx.org/)
 
 <br>
 <hr>
