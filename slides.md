@@ -118,12 +118,6 @@ Check out
 - Implement partials (ex: header.ejs and footer.ejs)
 - Use a Bootstrap card component to display the truck data and implement it as a component
 
-# Adjust Header and Footer
-
-- fix footer copy
-- make header look nicer with its own nav menu and search box
-
-
 ---
 transition: slide-left
 ---
@@ -167,6 +161,16 @@ class: text-left
 transition: slide-left
 ---
 
+# Adjust Header and Footer
+
+- fix footer copy
+- make header look nicer with its own nav menu and search box
+- add register and login links to menu
+
+---
+transition: slide-left
+---
+
 # Set up connect-flash
 
 - connect-flash is used to show success messages, error messages, info etc.
@@ -188,6 +192,22 @@ transition: slide-left
   ```
 - create `flashValidationErrors()` in errorHandlers.js
 - in truckController.js, insert `req.flash("success", `/${truck.slug} added successfully!`)`
+
+---
+transition: slide-left
+---
+
+# Make addTruck form using Bootstrap
+
+- Using [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/overview/) create a form to add a foodtruck
+
+---
+transition: slide-left
+---
+
+# Exercise: make editTruck form using Bootstrap
+
+- Using [Bootstrap Forms](https://getbootstrap.com/docs/5.3/forms/overview/) create a form to edit a foodtruck
 
 ---
 transition: slide-left
