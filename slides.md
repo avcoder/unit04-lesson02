@@ -140,9 +140,27 @@ class: text-left
 transition: slide-left
 ---
 
-# GE
+# Set up connect-flash
 
-asdf
+- connect-flash is used to show success messages, error messages, info etc.
+- How does it work?
+   - if you wish to pass any message, use: `req.flash()`
+   - pass in a type of message, and an actual message
+   - connect-flash will then stick that info in the next request object (via sessions)
+   - That info will then clean up after itself after that 1st request
+- in app.js:
+  ```js
+  import flash from "connect-flash";
+  import { notFound, flashValidationErrors } from "./handlers/errorHandlers.js";
+
+  app.use(flash());
+
+  res.locals.flashes = req.flash(); // flash messages (ex: success, error, info)
+
+  app.use(flashValidationErrors); // flash validation errors
+  ```
+- create `flashValidationErrors()` in errorHandlers.js
+- in truckController.js, insert `req.flash("success", `/${truck.slug} added successfully!`)`
 
 ---
 transition: slide-left
