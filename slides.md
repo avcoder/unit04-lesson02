@@ -101,11 +101,38 @@ transition: slide-left
 transition: slide-left
 ---
 
+# Add EJS partials and Bootstrap
+Check out 
+- in app.js:
+  ```js
+  app.use(
+    "/css",
+    express.static(path.join(__dirname, "node_modules/bootswatch/dist/sketchy"))
+  );
+  app.use(
+    "/js",
+    express.static(path.join(__dirname, "node_modules/bootstrap/dist/js"))
+  );
+  ```
+- Let's use a free Bootstrap theme from [Bootswatch](https://bootswatch.com/) 
+- Implement partials (ex: header.ejs and footer.ejs)
+- Use a Bootstrap card component to display the truck data and implement it as a component
+
+# Adjust Header and Footer
+
+- fix footer copy
+- make header look nicer with its own nav menu and search box
+
+
+---
+transition: slide-left
+---
+
 # Exercise
 
 - Modify home.ejs such that it GETs all the foodtruck data (similar to trucks.ejs), but displays the data in the form of a Bootstrap table (columns may include: Truck Name, Description, Tags, Url, Edit, Delete)
 - Remember to include any partials and/or components
-- Edit button for each table row should be an anchor tag whose href = `/trucks/<_id from mongodb goes here>/edit`
+- Edit button for each table row should be an anchor tag whose href = `/truck/<_id from mongodb goes here>/edit`
 - Delete button for each table row should be an anchor tag whose href = `/truck/<_id from mongodb>/delete`
 
 
@@ -161,35 +188,6 @@ transition: slide-left
   ```
 - create `flashValidationErrors()` in errorHandlers.js
 - in truckController.js, insert `req.flash("success", `/${truck.slug} added successfully!`)`
-
----
-transition: slide-left
----
-
-# Add EJS partials and Bootstrap
-Check out 
-- in app.js:
-  ```js
-  app.use(
-    "/css",
-    express.static(path.join(__dirname, "node_modules/bootswatch/dist/sketchy"))
-  );
-  app.use(
-    "/js",
-    express.static(path.join(__dirname, "node_modules/bootstrap/dist/js"))
-  );
-  ```
-- Let's use a free Bootstrap theme from [Bootswatch](https://bootswatch.com/) 
-- Implement partials (ex: header.ejs and footer.ejs)
-- Use a Bootstrap card component to display the truck data and implement it as a component
-
----
-transition: slide-left
----
-
-# Exercise
-
-asdf
 
 ---
 transition: slide-left
