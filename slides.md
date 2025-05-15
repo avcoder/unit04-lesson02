@@ -103,7 +103,10 @@ transition: slide-left
 
 # Exercise
 
-- Modify home.ejs such that it GETs all the foodtruck data, but displays it in the form of a Bootstrap table (columns may include: Truck Name, Description, Tags, Url, Edit, Delete)
+- Modify home.ejs such that it GETs all the foodtruck data (similar to trucks.ejs), but displays the data in the form of a Bootstrap table (columns may include: Truck Name, Description, Tags, Url, Edit, Delete)
+- Remember to include any partials and/or components
+- Edit button for each table row should be an anchor tag whose href = `/trucks/<_id from mongodb goes here>/edit`
+- Delete button for each table row should be an anchor tag whose href = `/truck/<_id from mongodb>/delete`
 
 
 ---
